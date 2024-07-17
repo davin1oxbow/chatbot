@@ -192,7 +192,5 @@ async function startChatBox() {
     history = fetchHistory();
   for (const msg of history) addMessage(msg.content, msg.role, !0);
   history.length || addMessage(welcome, "assistant", !0);
-
-  togglePopup();
 }
 startChatBox();
